@@ -2,5 +2,5 @@
 Demonstration for lectures of computer vision and image measurement
 
 # This is an exercise 
-# This is updated
-I am doing some updates. 
+# This is updated, modified
+We are doing some updates. 
