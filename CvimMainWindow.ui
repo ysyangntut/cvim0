@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CvimMainWindow</class>
+ <widget class="QMainWindow" name="CvimMainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1126</width>
+    <height>581</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="pbAssignment8">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>20</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Assignment 8</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1126</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_Project">
+    <property name="title">
+     <string>&amp;Project</string>
+    </property>
+    <addaction name="action_Load"/>
+    <addaction name="action_Save"/>
+    <addaction name="action_SaveAs"/>
+   </widget>
+   <widget class="QMenu" name="menu_Image_Sequence">
+    <property name="title">
+     <string>&amp;Image Sequence</string>
+    </property>
+    <widget class="QMenu" name="menu_ImgSeq_Add">
+     <property name="title">
+      <string>&amp;Add ...</string>
+     </property>
+     <addaction name="action_ImgSeq_Add_BySelection"/>
+     <addaction name="action_ImgSeq_Add_ByCformat"/>
+     <addaction name="action_ImgSeq_Add_ByListFile"/>
+    </widget>
+    <addaction name="menu_ImgSeq_Add"/>
+    <addaction name="action_ImgSeq_Edit"/>
+   </widget>
+   <widget class="QMenu" name="menu_Camera">
+    <property name="title">
+     <string>&amp;Camera</string>
+    </property>
+    <widget class="QMenu" name="menu_Add">
+     <property name="title">
+      <string>&amp;Add ...</string>
+     </property>
+     <addaction name="action_Camera_Add_ByFile"/>
+    </widget>
+    <addaction name="menu_Add"/>
+    <addaction name="action_Camera_Edit"/>
+    <addaction name="action_User_Point_Calibration"/>
+   </widget>
+   <widget class="QMenu" name="menu_Target">
+    <property name="title">
+     <string>&amp;Target</string>
+    </property>
+    <addaction name="action_Target_Add"/>
+    <addaction name="action_Target_Edit"/>
+   </widget>
+   <widget class="QMenu" name="menu_Curve">
+    <property name="title">
+     <string>&amp;Curve</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_Surface">
+    <property name="title">
+     <string>&amp;Surface</string>
+    </property>
+   </widget>
+   <addaction name="menu_Project"/>
+   <addaction name="menu_Image_Sequence"/>
+   <addaction name="menu_Camera"/>
+   <addaction name="menu_Target"/>
+   <addaction name="menu_Curve"/>
+   <addaction name="menu_Surface"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action_Load">
+   <property name="text">
+    <string>&amp;Load ...</string>
+   </property>
+  </action>
+  <action name="action_Save">
+   <property name="text">
+    <string>&amp;Save</string>
+   </property>
+  </action>
+  <action name="action_SaveAs">
+   <property name="text">
+    <string>&amp;Save as ...</string>
+   </property>
+  </action>
+  <action name="action_ImgSeq_Edit">
+   <property name="text">
+    <string>&amp;Edit ...</string>
+   </property>
+  </action>
+  <action name="action_ImgSeq_Add_BySelection">
+   <property name="text">
+    <string>by &amp;selecting files</string>
+   </property>
+  </action>
+  <action name="action_ImgSeq_Add_ByCformat">
+   <property name="text">
+    <string>by C-format file names</string>
+   </property>
+  </action>
+  <action name="action_ImgSeq_Add_ByListFile">
+   <property name="text">
+    <string>by list &amp;file</string>
+   </property>
+  </action>
+  <action name="action_Target_Add">
+   <property name="text">
+    <string>Add ...</string>
+   </property>
+  </action>
+  <action name="action_Camera_Add_ByFile">
+   <property name="text">
+    <string>by file</string>
+   </property>
+  </action>
+  <action name="action_Camera_Edit">
+   <property name="text">
+    <string>Edit ...</string>
+   </property>
+  </action>
+  <action name="action_Target_Edit">
+   <property name="text">
+    <string>Edit ...</string>
+   </property>
+  </action>
+  <action name="action_User_Point_Calibration">
+   <property name="text">
+    <string>&amp;User-Point Calibration</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
